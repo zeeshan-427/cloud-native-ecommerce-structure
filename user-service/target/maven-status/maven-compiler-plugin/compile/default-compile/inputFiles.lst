@@ -1,0 +1,5 @@
+/Users/z0001/Documents/cloud-native-ecommerce-structure/user-service/src/main/java/com/ecommerce/user/UserApplication.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/user-service/src/main/java/com/ecommerce/user/controller/UserController.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/user-service/src/main/java/com/ecommerce/user/entity/User.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/user-service/src/main/java/com/ecommerce/user/repository/UserRepository.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/user-service/src/main/java/com/ecommerce/user/service/UserService.java

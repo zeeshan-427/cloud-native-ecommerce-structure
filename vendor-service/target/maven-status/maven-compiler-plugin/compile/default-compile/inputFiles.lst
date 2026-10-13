@@ -1,0 +1,5 @@
+/Users/z0001/Documents/cloud-native-ecommerce-structure/vendor-service/src/main/java/com/ecommerce/vendor/VendorApplication.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/vendor-service/src/main/java/com/ecommerce/vendor/controller/VendorController.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/vendor-service/src/main/java/com/ecommerce/vendor/entity/Vendor.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/vendor-service/src/main/java/com/ecommerce/vendor/repository/VendorRepository.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/vendor-service/src/main/java/com/ecommerce/vendor/service/VendorService.java

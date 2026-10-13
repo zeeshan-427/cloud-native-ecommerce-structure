@@ -1,0 +1,119 @@
+services:
+
+  service-registry:
+    image: service-registry:latest
+    container_name: service-registry-container
+    ports:
+      - "8761:8761"
+
+  config-server:
+    image: config-server:latest
+    container_name: config-server-container
+    ports:
+      - "8888:8888"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+    depends_on:
+      - service-registry
+
+  auth-service:
+    image: auth-service:latest
+    container_name: auth-service-container
+    ports:
+      - "8081:8081"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+    depends_on:
+      - service-registry
+      - config-server
+
+  user-service:
+    image: user-service:latest
+    container_name: user-service-container
+    ports:
+      - "8082:8082"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  vendor-service:
+    image: vendor-service:latest
+    container_name: vendor-service-container
+    ports:
+      - "8083:8083"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  product-service:
+    image: product-service:latest
+    container_name: product-service-container
+    ports:
+      - "8084:8084"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  inventory-service:
+    image: inventory-service:latest
+    container_name: inventory-service-container
+    ports:
+      - "8085:8085"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  cart-service:
+    image: cart-service:latest
+    container_name: cart-service-container
+    ports:
+      - "8086:8086"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  order-service:
+    image: order-service:latest
+    container_name: order-service-container
+    ports:
+      - "8087:8087"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  payment-service:
+    image: payment-service:latest
+    container_name: payment-service-container
+    ports:
+      - "8088:8088"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  review-service:
+    image: review-service:latest
+    container_name: review-service-container
+    ports:
+      - "8089:8089"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  notification-service:
+    image: notification-service:latest
+    container_name: notification-service-container
+    ports:
+      - "8090:8090"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888
+
+  api-gateway:
+    image: api-gateway:latest
+    container_name: api-gateway-container
+    ports:
+      - "8080:8080"
+    environment:
+      EUREKA_URL: http://service-registry:8761/eureka
+      CONFIG_SERVER_URL: http://config-server:8888

@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: inventory-service
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: inventory-service
+
+  template:
+    metadata:
+      labels:
+        app: inventory-service
+
+    spec:
+      containers:
+        - name: inventory-service
+          image: inventory-service:latest
+
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 8085
+
+          env:
+            - name: EUREKA_URL
+              value: "http://service-registry:8761/eureka"
+
+            - name: CONFIG_SERVER_URL
+              value: "http://config-server:8888"

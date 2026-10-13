@@ -1,0 +1,5 @@
+/Users/z0001/Documents/cloud-native-ecommerce-structure/inventory-service/src/main/java/com/ecommerce/inventory/InventoryApplication.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/inventory-service/src/main/java/com/ecommerce/inventory/controller/InventoryController.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/inventory-service/src/main/java/com/ecommerce/inventory/entity/Inventory.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/inventory-service/src/main/java/com/ecommerce/inventory/repository/InventoryRepository.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/inventory-service/src/main/java/com/ecommerce/inventory/service/InventoryService.java

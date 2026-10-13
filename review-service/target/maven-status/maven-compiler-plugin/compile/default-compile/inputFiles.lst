@@ -1,0 +1,5 @@
+/Users/z0001/Documents/cloud-native-ecommerce-structure/review-service/src/main/java/com/ecommerce/review/ReviewApplication.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/review-service/src/main/java/com/ecommerce/review/controller/ReviewController.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/review-service/src/main/java/com/ecommerce/review/entity/Review.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/review-service/src/main/java/com/ecommerce/review/repository/ReviewRepository.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/review-service/src/main/java/com/ecommerce/review/service/ReviewService.java

@@ -1,0 +1,5 @@
+/Users/z0001/Documents/cloud-native-ecommerce-structure/cart-service/src/main/java/com/ecommerce/cart/CartApplication.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/cart-service/src/main/java/com/ecommerce/cart/controller/CartController.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/cart-service/src/main/java/com/ecommerce/cart/entity/Cart.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/cart-service/src/main/java/com/ecommerce/cart/repository/CartRepository.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/cart-service/src/main/java/com/ecommerce/cart/service/CartService.java

@@ -1,0 +1,10 @@
+com/ecommerce/order/client/NotificationClient.class
+com/ecommerce/order/entity/Order$OrderBuilder.class
+com/ecommerce/order/service/OrderService.class
+com/ecommerce/order/client/InventoryClient.class
+com/ecommerce/order/controller/OrderController.class
+com/ecommerce/order/repository/OrderRepository.class
+com/ecommerce/order/OrderApplication.class
+com/ecommerce/order/client/ProductClient.class
+com/ecommerce/order/client/PaymentClient.class
+com/ecommerce/order/entity/Order.class

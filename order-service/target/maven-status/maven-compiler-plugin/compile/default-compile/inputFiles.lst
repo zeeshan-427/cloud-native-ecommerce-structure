@@ -1,0 +1,9 @@
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/OrderApplication.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/client/InventoryClient.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/client/NotificationClient.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/client/PaymentClient.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/client/ProductClient.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/controller/OrderController.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/entity/Order.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/repository/OrderRepository.java
+/Users/z0001/Documents/cloud-native-ecommerce-structure/order-service/src/main/java/com/ecommerce/order/service/OrderService.java
