@@ -17,7 +17,7 @@ public class AuthController {
     public ApiResponse<UserCredential> register(
             @RequestBody UserCredential userCredential) {
         System.out.println("REGISTER API HIT");
-        System.out.println("CI/CD TEST - Register API Called");
+        System.out.println("BUILD-VERIFY-15-OCT-2026");
 
 
 
