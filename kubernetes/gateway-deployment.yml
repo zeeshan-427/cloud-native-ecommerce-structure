@@ -19,14 +19,16 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: api-gateway:latest
-
-          imagePullPolicy: IfNotPresent
+          image: api-gateway:v2
+          imagePullPolicy: Never
 
           ports:
             - containerPort: 8080
 
           env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "k8s"
+
             - name: EUREKA_URL
               value: "http://service-registry:8761/eureka"
 

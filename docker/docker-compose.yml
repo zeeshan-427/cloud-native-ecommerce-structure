@@ -115,5 +115,9 @@ services:
     ports:
       - "8080:8080"
     environment:
+      SPRING_PROFILES_ACTIVE: docker
       EUREKA_URL: http://service-registry:8761/eureka
       CONFIG_SERVER_URL: http://config-server:8888
+    depends_on:
+      - service-registry
+      - config-server
