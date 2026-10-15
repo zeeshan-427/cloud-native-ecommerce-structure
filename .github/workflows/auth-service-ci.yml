@@ -35,9 +35,11 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build \
-          -t zeeshan427/auth-service:latest \
-          ./auth-service
+            -t zeeshan427/auth-service:${{ github.sha }} \
+            -t zeeshan427/auth-service:latest \
+            ./auth-service
 
-      - name: Push Docker Image
+      - name: Push Docker Images
         run: |
+          docker push zeeshan427/auth-service:${{ github.sha }}
           docker push zeeshan427/auth-service:latest
