@@ -1,0 +1,52 @@
+name: User Service CI
+
+on:
+  push:
+    paths:
+      - 'user-service/**'
+      - 'common-library/**'
+      - '.github/workflows/user-service-ci.yml'
+    branches:
+      - main
+
+  pull_request:
+    paths:
+      - 'user-service/**'
+      - 'common-library/**'
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Cache Maven Repository
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-m2
+
+      - name: Install Parent POM
+        run: mvn -N install
+
+      - name: Install Common Library
+        working-directory: common-library
+        run: mvn clean install -DskipTests
+
+      - name: Build User Service
+        working-directory: user-service
+        run: mvn clean package -DskipTests
