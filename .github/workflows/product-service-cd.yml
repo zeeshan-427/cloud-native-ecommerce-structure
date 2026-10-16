@@ -1,7 +1,14 @@
 name: Product Service CD
 
 on:
+  push:
+    paths:
+      - 'product-service/**'
+    branches:
+      - main
+
   workflow_dispatch:
+
 
 jobs:
   deploy:
