@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: user-service:latest
+          image: zeeshan427/user-service:latest
 
           imagePullPolicy: IfNotPresent
 
