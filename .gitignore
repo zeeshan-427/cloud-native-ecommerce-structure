@@ -13,3 +13,11 @@
 
 # Environment
 .env
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+*.tfvars
+crash.log
